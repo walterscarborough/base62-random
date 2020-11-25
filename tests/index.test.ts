@@ -1,4 +1,4 @@
-import {generateRandomBase62} from './index';
+import {generateRandomBase62} from '../src';
 
 describe('index', () => {
   it('should generate a base62 string that matches the specified length', () => {

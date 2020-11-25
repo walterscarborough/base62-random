@@ -1,6 +1,9 @@
 # IntelliJ
 .idea
 
+# Library build directory
+lib
+
 # Logs
 logs
 *.log
