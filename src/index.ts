@@ -7,7 +7,7 @@ const convertHexStringToNumber = (input: string): number => {
 };
 
 const convertNumberToBase62 = (input: number): string => {
-  let output: string[] = [];
+  const output: string[] = [];
 
   const base = 62;
   const characterSet = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';

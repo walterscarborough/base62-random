@@ -8,7 +8,7 @@ describe('index', () => {
     for (let i = 0; i < loopLimit; i++) {
       const output = generateRandomBase62(10);
 
-      expect(output).toHaveLength(10)
+      expect(output).toHaveLength(10);
 
       loopCounter += 1;
     }
@@ -29,7 +29,7 @@ describe('index', () => {
       expect(outputA).not.toEqual(outputB);
 
       if (seenValues.has(outputA) || seenValues.has(outputB)) {
-        fail("base62 string should be random!");
+        fail('base62 string should be random!');
       }
 
       seenValues.add(outputA);
