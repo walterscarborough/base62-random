@@ -2,9 +2,15 @@
   "name": "base62-random",
   "version": "1.0.0",
   "description": "This is a TypeScript library for generating random base62 strings.",
-  "main": "index.js",
+  "main": "./lib/index.js",
+  "files": [
+    "lib/"
+  ],
   "scripts": {
-    "build": "tsc",
+    "build": "npm run build:clean && npm run build:compile",
+    "build:clean": "rm -rf lib",
+    "build:compile": "tsc",
+    "prepublish": "npm run test && npm run build",
     "test": "jest --forceExit --coverage --verbose --runInBand --detectOpenHandles"
   },
   "repository": {
