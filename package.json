@@ -1,5 +1,5 @@
 {
-  "name": "base62-random",
+  "name": "@walter.scarborough/base62-random",
   "version": "1.0.0",
   "description": "This is a TypeScript library for generating random base62 strings.",
   "main": "./lib/index.js",
